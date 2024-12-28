@@ -1,4 +1,4 @@
-// @ts-nocheck
+
 import React from 'react'
 import Card from './Card'
 import ContentCard from './ContentCard'

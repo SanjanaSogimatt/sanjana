@@ -1,4 +1,5 @@
-// @ts-nocheck
+
+import Link from 'next/link'
 import React from 'react'
 const Navbar = () => {
   return (
@@ -6,10 +7,10 @@ const Navbar = () => {
           <header className='absolute top-1/2 w-full h-full -translate-y-1/2'>
               <nav className='flex size-full items-center justify-between p-4'>
                   <div className="brand flex items-center space-x-2">
-                      <a href="/" className='flex items-center space-x-2'>
+                      <Link href="/" className='flex items-center space-x-2'>
                       <img src="/logo.jpg" alt="" className='object-contain rounded-full w-10'/>
                           <h1 className='leading-[1] '>Sanjana <br /> Sogimatt</h1>
-                      </a>
+                      </Link>
                   </div>
                   
               </nav>

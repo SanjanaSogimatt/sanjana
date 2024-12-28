@@ -1,7 +1,11 @@
-// @ts-nocheck
-import React from 'react'
 
-const ContentCard = ({src,title,description}) => {
+import React from 'react'
+interface content{
+    src?:string;
+    title:string;
+    description:string;
+}
+const ContentCard = ({src,title,description}:content) => {
   return (
       <div className='relative w-full my-6 max-w-xl'>
           <div className="bg-white/10 backdrop-blur-md rounded-lg shadow-lg flex justify-center items-center">

@@ -1,4 +1,4 @@
-// @ts-nocheck
+
 'use client'
 import React, { useState, useEffect } from 'react';
 
@@ -6,7 +6,9 @@ const CursorBall = () => {
     const [position, setPosition] = useState({ x: 0, y: 0 });
 
     useEffect(() => {
-        const handleMouseMove = (event) => {
+        
+
+        const handleMouseMove = (event: MouseEvent): void => {
             const scrollY = window.scrollY; // Get the vertical scroll position
             setPosition({
                 x: event.clientX, // X position relative to the viewport

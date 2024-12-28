@@ -1,4 +1,4 @@
-// @ts-nocheck
+
 import React from 'react'
 import Marquee from 'react-fast-marquee'
 function Footer() {
@@ -26,7 +26,7 @@ function Footer() {
         </div>
 
         <div className="flex flex-col">
-          <p className="text-white">Let's build something togerther</p>
+          <p className="text-white">Let&apos;s build something togerther</p>
           <a
             href="mailto:sanjanasogimatt@gmail.com"
             className="text-white hover:underline"

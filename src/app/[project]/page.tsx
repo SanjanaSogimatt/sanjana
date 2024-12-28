@@ -1,11 +1,11 @@
-// @ts-nocheck
+
 'use client'
 import { useParams } from 'next/navigation'
 import React from 'react'
 import {projects} from '../content/data'
 
 
-function page() {
+function Page() {
     const { project } = useParams<{ project: string }>()
     const data = projects.find((p) => p.titleLink === project)
     return (
@@ -33,7 +33,7 @@ function page() {
                             <h1 className='col-start-1 col-span-2 opacity-40'>Tech stack used</h1>
                             <div className='col-start-3 col-span-5'>
                                 <div className='flex flex-row gap-6'>
-                                    {data?.tech.map((tech, idx) => (
+                                    {data?.tech && data?.tech.map((tech, idx) => (
                                         <div key={idx}>{tech}</div>
                                     ))}
                                 </div>
@@ -41,7 +41,7 @@ function page() {
                             <h1 className='col-start-1 col-span-2 opacity-40'>Color palatte</h1>
                             <div className='col-start-3 col-span-5'>
                                 <div className='flex flex-row gap-6'>
-                                {data?.colors.map((color,idx) => (
+                                {data?.colors && data?.colors.map((color,idx) => (
                                     <div className='w-10 h-10 rounded-xl' key={idx} style={{ backgroundColor: color }}></div>
                                 ))}
                                 </div>
@@ -59,7 +59,7 @@ function page() {
                         </div>
                         <div className='flex flex-col'>
                             {data?.vdsrc && <video src={data?.vdsrc} autoPlay loop className='w-full h-full' ></video>}
-                            {data?.image.map((img, idx) => (
+                            {data?.image && data?.image.map((img, idx) => (
                             <div className='w-full h-full my-4' key={idx}>
                                     <img src={img} alt="" className='object-contain' />
                                 </div>
@@ -73,4 +73,4 @@ function page() {
     )
 }
 
-export default page
+export default Page
