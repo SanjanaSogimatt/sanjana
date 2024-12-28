@@ -46,7 +46,7 @@ export const projects = [
         subtitle: 'Find campsites near you',
         description: 'Campsite is a like reddit for campers (always a mountain lover). It is a platform that allows users to find campsites near them. Users can discover, review, and share information about campsites worldwide',
         image: ['/camp/img1.png', '/camp/img2.png', '/camp/img3.png'],
-        colors: ['#0b0805', '#0e0a06', '#110c0c','#030305'],
+        colors: ['#2E8B57', '#fff', '#8B4513','#D2691E'],
         typography: 'sans-serif',
         tech: ['HTML', 'CSS', 'JavaScript', 'MongoDB', 'Express'],
         link:'https://yelp-camp-q5i8.onrender.com'
