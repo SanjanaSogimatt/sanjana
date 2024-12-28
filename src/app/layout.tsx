@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sanjana sogimatt",
+  title: "Sanjana Sogimatt",
   description: "Made with love",
 };
 
