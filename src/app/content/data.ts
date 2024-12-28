@@ -49,7 +49,7 @@ export const projects = [
         colors: ['#0b0805', '#0e0a06', '#110c0c','#030305'],
         typography: 'sans-serif',
         tech: ['HTML', 'CSS', 'JavaScript', 'MongoDB', 'Express'],
-        link:'https://xora-liart.vercel.app/'
+        link:'https://yelp-camp-q5i8.onrender.com'
     },
     {
         id: 4,
