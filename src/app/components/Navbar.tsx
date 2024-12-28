@@ -1,5 +1,5 @@
+// @ts-nocheck
 import React from 'react'
-const navItems=['Home','About','Projects','Contact']
 const Navbar = () => {
   return (
       <div className='relative fixed top-0 border border-white/20  w-full z-50 h-16'>

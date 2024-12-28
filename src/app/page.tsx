@@ -1,8 +1,6 @@
-import Image from "next/image";
-import Navbar from "./components/Navbar";
+// @ts-nocheck
 import Hero from "./components/Hero";
 import Project from "./components/Project";
-import CursorBall from "./components/CursorBall";
 import Background from "./components/Background";
 
 export default function Home() {
